@@ -7,11 +7,12 @@ body{
 #yi-header {
 	position:relative;
 	top:100px;
-	left:10px;
+	
 	font-family: DengXian, Calibri, HelveticaLTStd-Roman, Helvetica, Arial, sans-serif;
 	font-weight: 100;
     font-size: 15em;
 	line-height: 1.5em;
+	right:15px;
 
 }
 
@@ -22,6 +23,7 @@ ul#yi-menu {
 	font-weight: 100;
     font-size: 2.7em;
 	line-height: 1em;
+	right:25px;
 
 }
 
@@ -32,17 +34,42 @@ ul#er-menu {
 	font-weight: 100;
     font-size: 2.5em;
 	line-height: 1em;
+	right:25px;
 }
 
 div#intropara{
-	position:relative;
-	max-width:500px;
-	left: 20px;
-	top:70%;
+	position:absolute;
+	width:500px;
+	left:50%;
+	margin-left:-250px;
+	text-align:center;
 	font-family: DengXian, Calibri, HelveticaLTStd-Roman, Helvetica, Arial, sans-serif;
 	font-weight: 400;
     font-size: 1em;
 	color:#000;
+	
+}
+
+.detail#archdetail{
+	position:relative;
+	top:350px;
+	width:1500px;
+	height:1500px;
+	background-color:#F5F5F5;
+	
+}
+
+.detail-title{
+	position:relative;
+/*	text-align:left;
+	top:40px;
+	left:40px;
+	*/
+	width:1500px;
+	height:1500px;
+	font-family: DengXian, Calibri, HelveticaLTStd-Roman, Helvetica, Arial, sans-serif;
+	font-weight: 100;
+    font-size: 2.5em;
 	
 }
 
