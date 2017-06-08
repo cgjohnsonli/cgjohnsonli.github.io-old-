@@ -8,3 +8,11 @@ $(function(){
 	});
 });
 
+$(function(){
+	$(".list-img").mouseover(function(){
+	$(this).fadeTo("fast",0.2);
+	});
+	$(".list-img").mouseout(function(){
+	$(this).fadeTo("fast",1);
+	});
+});
