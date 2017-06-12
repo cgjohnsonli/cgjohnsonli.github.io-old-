@@ -6,7 +6,7 @@ body{
 
 #yi-header {
 	position:relative;
-	top:100px;
+	top:150px;
 	
 	font-family: DengXian, Calibri, HelveticaLTStd-Roman, Helvetica, Arial, sans-serif;
 	font-weight: 100;
@@ -18,29 +18,21 @@ body{
 
 ul#yi-menu {
 	list-style-type: none;
+	top:50px;
 	position:relative;
 	font-family: DengXian, Calibri, HelveticaLTStd-Roman, Helvetica, Arial, sans-serif;
 	font-weight: 100;
-    font-size: 2.7em;
+    font-size: 2.15em;
 	line-height: 1em;
-	right:25px;
+	right:30px;
 
-}
-
-ul#er-menu {
-	list-style-type: none;
-	position:relative;
-	font-family: DengXian, Calibri, HelveticaLTStd-Roman, Helvetica, Arial, sans-serif;
-	font-weight: 100;
-    font-size: 2.5em;
-	line-height: 1em;
-	right:25px;
 }
 
 div#intropara{
 	position:absolute;
 	width:500px;
 	left:50%;
+	top:500px;
 	margin-left:-250px;
 	text-align:center;
 	font-family: DengXian, Calibri, HelveticaLTStd-Roman, Helvetica, Arial, sans-serif;
@@ -50,9 +42,9 @@ div#intropara{
 	
 }
 
-.detail#archdetail{
+.detail{
 	position:relative;
-	top:340px;
+	top:450px;
 	width:70%;
 	height:1500px;
 }
@@ -71,7 +63,7 @@ div#intropara{
 	top:40px;
 	width:400px;
 	height:400px;
-	margin:2px;
+	margin:0px;
 	
 }
 
@@ -79,7 +71,7 @@ div#intropara{
 	position:relative;
 	width:400px;
 	height:400px;
-	margin:2px;
+	margin:0px;
 }
 
 .list-des{
@@ -88,10 +80,10 @@ div#intropara{
 	right:50px;
 	width:300px;
 	height:300px;
-	margin:2px;
+	margin:0px;
 	font-family: DengXian, Calibri, HelveticaLTStd-Roman, Helvetica, Arial, sans-serif;
 	font-weight: 300;
-    font-size: 2em;
+    font-size: 1.9em;
 	line-height:1em;
 }
 
