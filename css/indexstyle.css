@@ -4,6 +4,16 @@ body{
 	min-height:1000px;
 }
 
+#header {
+	position:fixed;
+	right:10px;
+	font-family: DengXian, Calibri, HelveticaLTStd-Roman, Helvetica, Arial, sans-serif;
+	font-weight: 100;
+    font-size: 1.5em;
+	
+}
+
+
 #yi-header {
 	position:relative;
 	top:150px;
@@ -49,6 +59,15 @@ div#intropara{
 
 }
 
+.detail#contact{
+	position:relative;
+	top:600px;
+	width:100%;
+	height:300px;
+	background-color:#F0F0F0;
+
+}
+
 .detail-title{
 	position:relative;
 	top:40px;
@@ -71,6 +90,21 @@ div#intropara{
 	position:relative;
 	width:400px;
 	height:400px;
+	margin:0px;
+}
+
+.list-img#contact-a{
+	position:relative;
+	left:-10%;
+	width:200px;
+	height:200px;
+	margin:0px;
+}
+.list-img#contact-b{
+	position:relative;
+	left:10%;
+	width:200px;
+	height:200px;
 	margin:0px;
 }
 
