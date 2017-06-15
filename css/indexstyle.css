@@ -77,6 +77,14 @@ div#intropara{
 	
 }
 
+.detail-subtitle{
+	position:relative;
+	font-family: DengXian, Calibri, HelveticaLTStd-Roman, Helvetica, Arial, sans-serif;
+	font-weight: 100;
+    font-size: 1.1em;
+	
+}
+
 .list-obj{
 	position:relative;
 	top:40px;

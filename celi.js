@@ -9,6 +9,20 @@ $(function(){
 });
 
 $(function(){
+	$('a#archall').click(function(){
+	$(".list-obj").fadeIn("slow");
+	return false;
+	});
+
+	$('a#archac, a#archpr, a#archco').click(function(){
+	var fa = $(this).attr("id");
+	$(".list-obj").fadeOut(100);
+	$("."+fa).fadeIn("slow");
+	return false;
+	});
+});
+
+$(function(){
 	$(".list-img").mouseover(function(){
 	$(this).fadeTo("fast",0.2);
 	});
