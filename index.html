@@ -21,6 +21,13 @@
 		a:active { color: #000000; }
 		a { text-decoration: none; }
 		.hand { cursor:pointer; }
+		img{opacity:1;
+		transition: opacity .4s;
+		-moz-transition: opacity .4s; /* Firefox 4 */
+        -webkit-transition: opacity .4s; /* Safari and Chrome */
+        -o-transition: opacity .4s; /* Opera */
+		}
+		img:hover{opacity:0.2;}
 	</style>
 	
 </head>
@@ -31,10 +38,7 @@
 <center>
     
 	<div id="yi-header" ><a href=" " id="name">Ce Li</a></div>
-	
-	<!--
-	<p id="quote">A designer, A coder</p>
-	-->
+
 	<div id="menus">
 	<ul id="yi-menu" >
 	<li><a href=" " id="arch">Architecture</a> |</li><li><a href=" " id="code"> Algorithm</a> |</li><li><a href=" " id="media"> Media </a></li>
@@ -49,130 +53,171 @@
 	</div>
 	
 	<section class="detail" id="archdetail">
-	<p class="detail-title"><a href="" id="archall">Architecture</a></p>
-	<br/>
-	<p class="detail-subtitle">
-	<a href=" " id="archac">Academic</a> | <a href=" " id="archpr">Professional</a> | <a href=" " id="archco">Competition</a>
-	</p>
 	
-	<a href=" " class="list-obj archac" id="arch-a">
-	<span class="list-des" id="a">Raster Poche<br/>Computational Design<br />Academic<br />2017</span>
-	<img class="list-img" src="./project/arch/athens0.jpg" id="arch-a">
-	</a>
-	<a href=" " class="list-obj archco" id="arch-b">
-	<span class="list-des" id="b">R.O.S.E<br/>Urban Design<br />Competition<br />2017</span>
-	<img class="list-img" src="./project/arch/uli0.jpg" id="arch-b">
-	</a>
-	<a href=" " class="list-obj archco" id="arch-h">
+	<ul id="arch-nav">
+	<li class="detail-title cur" id="archall"><a href=" " onclick="return false">Architecture</a></li>
+	<br/>
+	<li class="detail-subtitle" id="archac"><a href=" " onclick="return false">Academic</a></li><span> | </span>
+	<li class="detail-subtitle" id="archpr"><a href=" " onclick="return false">Professional</a></li><span> | </span>
+	<li class="detail-subtitle" id="archco"><a href=" " onclick="return false">Competition</a></li>
+	</ul>
+
+	<ul id="arch-content" class="image-grid">
+	
+	<li class="list-obj archac" id="arch-a"><a href=" " class="list-link">
+	<span class="list-des" id="arch-a">Raster Poche<br/>Computational Design<br />Academic<br />2017</span>
+	<img class="list-img" src="./project/arch/athens0.jpg" id="arch-a"></a>
+	</li>
+	<li class="list-obj archco" id="arch-b"><a href=" " class="list-link">
+	<span class="list-des" id="arch-b">R.O.S.E<br/>Urban Design<br />Competition<br />2017</span>
+	<img class="list-img" src="./project/arch/uli0.jpg" id="arch-b"></a>
+	</li>
+	<li class="list-obj archco" id="arch-h"><a href=" " class="list-link">
 	<span class="list-des" id="b">Atlantis<br/>Computational Design<br />Competition<br />2017</span>
-	<img class="list-img" src="./project/arch/atlantis0.jpg" id="arch-h">
-	</a>
-	<a href=" " class="list-obj archac" id="arch-c">
+	<img class="list-img" src="./project/arch/atlantis0.jpg" id="arch-h"></a>
+	</li>
+	<li class="list-obj archac" id="arch-c"><a href=" " class="list-link">
 	<span class="list-des" id="c">Plouto<br/>Skyscraper Design<br />Academic<br />2016</span>
-	<img class="list-img" src="./project/arch/ny0.jpg" id="arch-c">
-	</a>
-	<a href=" " class="list-obj archac" id="arch-f">
+	<img class="list-img" src="./project/arch/ny0.jpg" id="arch-c"></a>
+	</li>
+	<li class="list-obj archac" id="arch-f"><a href=" " class="list-link">
 	<span class="list-des" id="c">Cloud City<br/>Residential Area Design<br />Academic<br />2015</span>
-	<img class="list-img" src="./project/arch/cloud0.jpg" id="arch-f">
-	</a>
-	<a href=" " class="list-obj archac" id="arch-i">
+	<img class="list-img" src="./project/arch/cloud0.jpg" id="arch-f"></a>
+	</li>
+	<li class="list-obj archac" id="arch-i"><a href=" " class="list-link">
 	<span class="list-des" id="c">Arc Hotel<br/>Hotel Design<br />Academic<br />2014</span>
-	<img class="list-img" src="./project/arch/hotel0.jpg" id="arch-i">
-	</a>
-	<a href=" " class="list-obj archac" id="arch-e">
+	<img class="list-img" src="./project/arch/hotel0.jpg" id="arch-i"></a>
+	</li>
+	<li class="list-obj archac" id="arch-e"><a href=" " class="list-link">
 	<span class="list-des" id="c">Wind City<br/>Urban Design<br />Academic<br />2015</span>
-	<img class="list-img" src="./project/arch/wind0.jpg" id="arch-e">
-	</a>
-	<a href=" " class="list-obj archac" id="arch-g">
+	<img class="list-img" src="./project/arch/wind0.jpg" id="arch-e"></a>
+	</li>
+	<li class="list-obj archac" id="arch-g"><a href=" " class="list-link">
 	<span class="list-des" id="c">Center of Creator<br/>Student Center Design<br />Academic<br />2014</span>
-	<img class="list-img" src="./project/arch/shatang0.jpg" id="arch-g">
-	</a>
-	<a href=" " class="list-obj archco" id="arch-d">
+	<img class="list-img" src="./project/arch/shatang0.jpg" id="arch-g"></a>
+	</li>
+	<li class="list-obj archco" id="arch-d"><a href=" " class="list-link">
 	<span class="list-des" id="d">Death&amp;Rebirth<br/>Landscape Design<br />Competition<br />2016</span>
-	<img class="list-img" src="./project/arch/liushui0.jpg" id="arch-d">
-	</a>
-	<a href=" " class="list-obj archpr" id="arch-j">
+	<img class="list-img" src="./project/arch/liushui0.jpg" id="arch-d"></a>
+	</li>
+	<li class="list-obj archpr" id="arch-j"><a href=" " class="list-link">
 	<span class="list-des" id="d">Porsche Center<br/>Construction Drawing<br />Professional<br />2016</span>
-	<img class="list-img" src="./project/arch/porsche0.jpg" id="arch-j">
-	</a>
-	<a href=" " class="list-obj archpr" id="arch-k">
+	<img class="list-img" src="./project/arch/porsche0.jpg" id="arch-j"></a>
+	</li>
+	<li class="list-obj archpr" id="arch-k"><a href=" " class="list-link">
 	<span class="list-des" id="d">Yunhe Renjia<br/>Construction Drawing<br />Professional<br />2016</span>
-	<img class="list-img" src="./project/arch/yunhe0.jpg" id="arch-k">
-	</a>
-	<a href=" " class="list-obj archac" id="arch-l">
+	<img class="list-img" src="./project/arch/yunhe0.jpg" id="arch-k"></a>
+	</li>
+	<li class="list-obj archac" id="arch-l"><a href=" " class="list-link">
 	<span class="list-des" id="d">Module Housing<br/>Architectural Design<br />Academic<br />2016</span>
-	<img class="list-img" src="./project/arch/graduate0.jpg" id="arch-l">
-	</a>
+	<img class="list-img" src="./project/arch/graduate0.jpg" id="arch-l"></a>
+	</li>
+	
+	</ul>
+
 	</section>
+	
+	<br /><br />
 	
 	<section class="detail" id="codedetail">
-	<p class="detail-title">Algorithm</p>
-	<a href=" " class="list-obj" id="code-a">
-	<span class="list-des" id="a">Simple Comlexity<br/>Subdivision Algorithm<br />Academic<br />2015</span>
-	<img class="list-img" src="./project/code/subdivision0.jpg" id="code-a">
-	</a>
-	<a href=" " class="list-obj" id="code-b">
-	<span class="list-des" id="b">Sacred Dimension<br/>Dimension Translation<br />Academic<br />2017</span>
+	<ul id="code-nav">
+	<li class="detail-title cur" id="codeall"><a href=" " onclick="return false">Algorithm</a></li>
+	<br/>
+	<li class="detail-subtitle" id="codefa"><a href=" " onclick="return false">Fabrication</a></li><span> | </span>
+	<li class="detail-subtitle" id="codere"><a href=" " onclick="return false">Research</a></li><span> | </span>
+	<li class="detail-subtitle" id="codeap"><a href=" " onclick="return false">Application</a></li>
+	</ul>
+	
+	<ul id="code-content" class="image-grid">
+	
+	<li class="list-obj codefa" id="code-a"><a href=" " class="list-link">
+	<span class="list-des" id="code-a">Simple Comlexity<br/>Layer Stack<br />Fabrication<br />2015</span>
+	<img class="list-img" src="./project/code/subdivision0.jpg" id="code-a"></a>
+	</li>
+	<li class="list-obj codefa" id="code-b"><a href=" " class="list-link">
+	<span class="list-des" id="b">Sacred Dimension<br/>Dimension Translation<br />Fabrication<br />2017</span>
 	<img class="list-img" src="./project/code/difab0.jpg" id="code-b">
-	</a>
-	<a href=" " class="list-obj" id="code-c">
-	<span class="list-des" id="c">Basic CA<br/>2D Cellular Automata<br />Academic<br />2016</span>
+	</a></li>
+	<li class="list-obj codeap" id="code-c"><a href=" " class="list-link">
+	<span class="list-des" id="c">Basic CA<br/>2D Cellular Automata<br />Application<br />2016</span>
 	<img class="list-img" src="./project/code/ca0.jpg" id="code-c">
-	</a>
-	<a href=" " class="list-obj" id="code-d">
-	<span class="list-des" id="d">Alien<br/>Annealing<br />Academic<br />2017</span>
+	</a></li>
+	<li class="list-obj codere" id="code-d"><a href=" " class="list-link">
+	<span class="list-des" id="d">Alien<br/>Annealing<br />Research<br />2017</span>
 	<img class="list-img" src="./project/code/redi0.jpg" id="code-d">
-	</a>
-	<a href=" " class="list-obj" id="code-e">
-	<span class="list-des" id="c">Cloud<br/>3D Cellular Automata<br />Academic<br />2015</span>
+	</a></li>
+	<li class="list-obj codere" id="code-e"><a href=" " class="list-link">
+	<span class="list-des" id="c">Cloud<br/>3D Cellular Automata<br />Research<br />2015</span>
 	<img class="list-img" src="./project/code/cloud0.jpg" id="code-e">
-	</a>
-	<a href=" " class="list-obj" id="code-f">
-	<span class="list-des" id="c">Wave<br/>Reaction-Diffusion<br />Academic<br />2015</span>
+	</a></li>
+	<li class="list-obj codere" id="code-f"><a href=" " class="list-link">
+	<span class="list-des" id="c">Wave<br/>Reaction-Diffusion<br />Research<br />2015</span>
 	<img class="list-img" src="./project/code/wave0.jpg" id="code-f">
-	</a>
-	<a href=" " class="list-obj" id="code-g">
-	<span class="list-des" id="c">Tree Eye<br/>L-system<br />Academic<br />2014</span>
+	</a></li>
+	<li class="list-obj codere" id="code-g"><a href=" " class="list-link">
+	<span class="list-des" id="c">Tree Eye<br/>L-system<br />Research<br />2014</span>
 	<img class="list-img" src="./project/code/l-system0.jpg" id="code-g">
-	</a>
-	<a href=" " class="list-obj" id="code-h">
-	<span class="list-des" id="c">Chimera<br/>Mix Algorithm<br />Academic<br />2017</span>
+	</a></li>
+	<li class="list-obj codere" id="code-h"><a href=" " class="list-link">
+	<span class="list-des" id="c">Chimera<br/>Mix Algorithm<br />Research<br />2017</span>
 	<img class="list-img" src="./project/code/chimera0.jpg" id="code-h">
-	</a>
-	<a href=" " class="list-obj" id="code-i">
-	<span class="list-des" id="d">Free Mandebrot<br/>Mandebrot Reseach<br />Academic<br />2017</span>
+	</a></li>
+	<li class="list-obj codere" id="code-i"><a href=" " class="list-link">
+	<span class="list-des" id="d">Free Mandebrot<br/>Mandebrot Reseach<br />Research<br />2017</span>
 	<img class="list-img" src="./project/code/mande0.jpg" id="code-i">
-	</a>
-	<a href=" " class="list-obj" id="code-j">
-	<span class="list-des" id="c">Music Balls<br/>Data Visualization<br />Academic<br />2017</span>
+	</a></li>
+	<li class="list-obj codeap" id="code-j"><a href=" " class="list-link">
+	<span class="list-des" id="c">Music Balls<br/>Data Visualization<br />Application<br />2017</span>
 	<img class="list-img" src="./project/code/ball0.jpg" id="code-j">
-	</a>
-	<a href=" " class="list-obj" id="code-k">
-	<span class="list-des" id="c">Rhythm Collar<br/>Data Visualization<br />Academic<br />2017</span>
+	</a></li>
+	<li class="list-obj codefa" id="code-k"><a href=" " class="list-link">
+	<span class="list-des" id="c">Rhythm Collar<br/>Data Visualization<br />Application<br />2017</span>
 	<img class="list-img" src="./project/code/collar0.jpg" id="code-k">
-	</a>
-	<a href=" " class="list-obj" id="code-l">
-	<span class="list-des" id="c">Sub-cross<br/>Subdivision Algorithm<br />Academic<br />2017</span>
+	</a></li>
+	<li class="list-obj codere" id="code-l"><a href=" " class="list-link">
+	<span class="list-des" id="c">Sub-cross<br/>Subdivision Algorithm<br />Research<br />2017</span>
 	<img class="list-img" src="./project/code/cross0.jpg" id="code-l">
-	</a>
+	</a></li>
+	
+	</ul>
 	</section>
+	
+	<br /><br />
 	
 	<section class="detail" id="mediadetail">
-	<p class="detail-title">Media</p>
-	<a href="http://noarchitecture.com/" class="list-obj" id="media-a" target="_blank">
+
+	<ul id="media-nav">
+	<li class="detail-title cur" id="mediaall"><a href=" " onclick="return false">Media</a></li>
+	<br/>
+	<li class="detail-subtitle" id="mediaweb"><a href=" " onclick="return false">Web Design</a></li><span> | </span>
+	<li class="detail-subtitle" id="mediagame"><a href=" " onclick="return false">Indie Game</a></li><span> | </span>
+	<li class="detail-subtitle" id="mediaorg"><a href=" " onclick="return false">Orgnizaiton</a></li>
+	</ul>
+
+	<ul id="media-content" class="image-grid">
+	<li class="list-obj mediaweb" id="media-a"><a href="http://noarchitecture.com/" class="list-link" target="_blank">
 	<span class="list-des" id="a">NOA Official Webite<br/>Web Design<br />Commission<br />2017</span>
 	<img class="list-img" src="./project/media/noa0.jpg" id="media-a">
-	</a>
+	</a></li>
+	</ul>
+	
 	</section>
 	
-	<section class="detail" id="contact">
-	<a href="https://github.com/cgjohnsonli" class="list-obj" id="contact-a" target="_blank">
-	<img class="list-img" src="./project/contact/github.png" id="contact-a">
-	</a>
+	<br/><br/>
 	
-	<a href="https://github.com/cgjohnsonli" class="list-obj" id="contact-b" target="_blank">
+
+	<section class="detail" id="contact">
+
+	<ul id="contact-content" class="image-grid">
+	
+	<li class="list-obj contactgit" id="contact-a"><a href="https://github.com/cgjohnsonli" class="list-linkc" target="_blank">
+	<img class="list-img" src="./project/contact/github.png" id="contact-a">
+	</a></li>
+	
+	<li class="list-obj contactmail" id="contact-b"><a href="mailto:marchlice@outlook.com" class="list-linkc" target="_blank">
 	<img class="list-img" src="./project/contact/mail.png" id="contact-b">
-	</a>
+	</a></li>
+	</ul>
 	</section>
 	
 </center>

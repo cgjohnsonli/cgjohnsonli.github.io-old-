@@ -59,9 +59,13 @@ div#intropara{
 
 }
 
+.image-grid{
+	width:92%;
+}
+
 .detail#contact{
 	position:relative;
-	top:600px;
+	bottom:0;
 	width:100%;
 	height:300px;
 	background-color:#F0F0F0;
@@ -70,7 +74,7 @@ div#intropara{
 
 .detail-title{
 	position:relative;
-	top:40px;
+	top:-10px;
 	font-family: DengXian, Calibri, HelveticaLTStd-Roman, Helvetica, Arial, sans-serif;
 	font-weight: 300;
     font-size: 2.5em;
@@ -86,34 +90,64 @@ div#intropara{
 }
 
 .list-obj{
-	position:relative;
-	top:40px;
+    float:left;
 	width:400px;
 	height:400px;
-	margin:0px;
-	
+	margin:1px;
+	overflow:hidden;
+}
+
+.list-obj#contact-a{
+	position:relative;
+	width:150px;
+	height:150px;
+	margin:1px;
+	top:35%;
+	left:35%;
+}
+.list-obj#contact-b{
+	position:relative;
+	width:150px;
+	height:150px;
+	margin:1px;
+	top:35%;
+	left:50%;
+}
+
+.list-link{
+	position:relative;
+	width:400px;
+	height:400px;
+	display:block;
+}
+
+.list-linkc{
+	position:relative;
+	width:150px;
+	height:150px;
+	display:block;
 }
 
 .list-img{
-	position:relative;
+	positon:relative;
 	width:400px;
 	height:400px;
-	margin:0px;
+}
+
+.list-des{
+	positon:relative;
+	z-index:-1;
 }
 
 .list-img#contact-a{
 	position:relative;
-	left:-10%;
-	width:200px;
-	height:200px;
-	margin:0px;
+	width:150px;
+	height:150px;
 }
 .list-img#contact-b{
 	position:relative;
-	left:10%;
-	width:200px;
-	height:200px;
-	margin:0px;
+	width:150px;
+	height:150px;
 }
 
 .list-des{
