@@ -28,8 +28,9 @@ $('#filters').on( 'click', 'button', function() {
 // bind sort button click
 $('#sorts').on( 'click', 'button', function() {
   var sortByValue = $(this).attr('data-sort-by');
-  $grid.isotope({ sortBy: sortByValue });
+  $grid.isotope({ sortBy: sortByValue, sortAscending:false });
 });
+
 
 // change is-checked class on buttons
 $('.button-group').each( function( i, buttonGroup ) {

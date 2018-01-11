@@ -15,6 +15,7 @@ body {
 	font-family: DengXian, Calibri, HelveticaLTStd-Roman, Helvetica, Arial, sans-serif;
 	font-weight: 100;
     font-size: 1.5em;
+	z-index:1;
 	
 }
 
