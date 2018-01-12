@@ -3,13 +3,11 @@
 <head>
     <title>Ce Li</title>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="css/indexstyle.css">
+	<link rel="stylesheet" type="text/css" href="css/indexstyle2.css">
 	<script src="./jquery.js"></script>
-	<script src="./jquery.quicksand.js"></script>
-	<script src="./jquery.easing.1.3.js"></script>
-	<script src="./celi.js"></script>
+
 	
-		<style type="text/css">
+	<style type="text/css">
 	body{
 	font-family: DengXian, Calibri, HelveticaLTStd-Roman, Helvetica, Arial, sans-serif;
 	font-size: 1em;
@@ -32,202 +30,230 @@
 	
 </head>
 <body>
-<div id="header"><a href="#contact-content" id="contact">contact</a><span> | </span><a href="./project/resume.pdf" id="resume" target="_blank">resume</a><span> | </span><a href=" ">title</a></div>
+<div id="header"><a href="#contact-content" id="contact">contact</a><span> | </span><a href="./project/resume.pdf" id="resume" target="_blank">resume</a><span> | </span><a href=" ">home</a></div>
+<h1 id="myname"></h1>
 
+<div id="catalogue">
 
-<center>
-    
-	<div id="yi-header" ><a href=" " id="name">Ce Li</a></div>
+<div id="filters" class="button-group">  
+  <button class="button is-checked" data-filter="*">Ce Li</button>
+  <button class="button" data-filter=".architecture">architecture</button>
+  <button class="button" data-filter=".algorithm">algorithm</button>
+  <button class="button" data-filter=".media">media</button>
+</div>
 
-	<div id="menus">
-	<ul id="yi-menu" >
-	<li><a href="#arch-nav" id="arch">Architecture</a> |</li><li><a href="#code-nav" id="code"> Algorithm</a> |</li><li><a href="#media-nav" id="media"> Media </a></li>
-	</ul>
-	</div>
-	
-	<div id="intropara">
-	<p class="intro" id="name">Welcome to my website!<br/><br/>I'm Ce Li, an architect but also practices in algorithm-aided design and media. You can see descriptions of each role by moving mouse on sub-titles and view projects by simple clicking!</p>
-	<p class="intro" id="arch">I am an architect. <br/><br/>Currently, I am studying at UPenn, School of Design in MSD-AAD(former M.Arch2) program. I got my B.Arch degree from Southeast University in China. Experienced various internship both in the US and in China. I am now seeking a more challenging work chance.</p>
-	<p class="intro" id="code">I am a programmer. <br/><br/>I am interested in algorithms-aided design. I led several award-winning independent study projects about how to use algorithm to evolve the process of traditional design.</p>
-	<p class="intro" id="media">I am a media practitioner. <br/><br/>Using skills learned in TBIM(Time based and interactive media) certificate program at Upenn, I am now leading a design team practices in web design, indie game development and online academic platform.</p>
-	</div>
-	
-	<section class="detail" id="archdetail">
-	
-	<ul id="arch-nav">
-	<br/>
-	<li class="detail-title cur" id="archall"><a href=" " onclick="return false">Architecture</a></li>
-	<br/>
-	<li class="detail-subtitle" id="archac"><a href=" " onclick="return false">Academic</a></li><span> | </span>
-	<li class="detail-subtitle" id="archpr"><a href=" " onclick="return false">Professional</a></li><span> | </span>
-	<li class="detail-subtitle" id="archco"><a href=" " onclick="return false">Competition</a></li>
-	</ul>
+<div id="sorts" class="button-group">  
+  <button class="button is-checked" data-sort-by="type">type</button>
+  <button class="button" data-sort-by="time">time</button>
+  <button class="button" data-sort-by="name">name</button>
+</div>
+</div>
+<div class="grid">
 
-	<ul id="arch-content" class="image-grid">
-	
-	<li class="list-obj archac" id="arch-a"><a href=" " class="list-link">
-	<span class="list-des" id="arch-a">Raster Poche<br/>Computational Design<br />Academic<br />2017</span>
-	<img class="list-img" src="./project/arch/athens0.jpg" id="arch-a"></a>
-	</li>
-	<li class="list-obj archco" id="arch-b"><a href=" " class="list-link">
-	<span class="list-des" id="arch-b">R.O.S.E<br/>Urban Design<br />Competition<br />2017</span>
-	<img class="list-img" src="./project/arch/uli0.jpg" id="arch-b"></a>
-	</li>
-	<li class="list-obj archco" id="arch-h"><a href=" " class="list-link">
-	<span class="list-des" id="b">Atlantis<br/>Computational Design<br />Competition<br />2017</span>
-	<img class="list-img" src="./project/arch/atlantis0.jpg" id="arch-h"></a>
-	</li>
-	<li class="list-obj archac" id="arch-c"><a href=" " class="list-link">
-	<span class="list-des" id="c">Plouto<br/>Skyscraper Design<br />Academic<br />2016</span>
-	<img class="list-img" src="./project/arch/ny0.jpg" id="arch-c"></a>
-	</li>
-	<li class="list-obj archac" id="arch-f"><a href=" " class="list-link">
-	<span class="list-des" id="c">Cloud City<br/>Residential Area Design<br />Academic<br />2015</span>
-	<img class="list-img" src="./project/arch/cloud0.jpg" id="arch-f"></a>
-	</li>
-	<li class="list-obj archac" id="arch-i"><a href=" " class="list-link">
-	<span class="list-des" id="c">Arc Hotel<br/>Hotel Design<br />Academic<br />2014</span>
-	<img class="list-img" src="./project/arch/hotel0.jpg" id="arch-i"></a>
-	</li>
-	<li class="list-obj archac" id="arch-e"><a href=" " class="list-link">
-	<span class="list-des" id="c">Wind City<br/>Urban Design<br />Academic<br />2015</span>
-	<img class="list-img" src="./project/arch/wind0.jpg" id="arch-e"></a>
-	</li>
-	<li class="list-obj archac" id="arch-g"><a href=" " class="list-link">
-	<span class="list-des" id="c">Center of Creator<br/>Student Center Design<br />Academic<br />2014</span>
-	<img class="list-img" src="./project/arch/shatang0.jpg" id="arch-g"></a>
-	</li>
-	<li class="list-obj archco" id="arch-d"><a href=" " class="list-link">
-	<span class="list-des" id="d">Death&amp;Rebirth<br/>Landscape Design<br />Competition<br />2016</span>
-	<img class="list-img" src="./project/arch/liushui0.jpg" id="arch-d"></a>
-	</li>
-	<li class="list-obj archpr" id="arch-j"><a href=" " class="list-link">
-	<span class="list-des" id="d">Porsche Center<br/>Construction Drawing<br />Professional<br />2016</span>
-	<img class="list-img" src="./project/arch/porsche0.jpg" id="arch-j"></a>
-	</li>
-	<li class="list-obj archpr" id="arch-k"><a href=" " class="list-link">
-	<span class="list-des" id="d">Yunhe Renjia<br/>Construction Drawing<br />Professional<br />2016</span>
-	<img class="list-img" src="./project/arch/yunhe0.jpg" id="arch-k"></a>
-	</li>
-	<li class="list-obj archac" id="arch-l"><a href=" " class="list-link">
-	<span class="list-des" id="d">Module Housing<br/>Architectural Design<br />Academic<br />2016</span>
-	<img class="list-img" src="./project/arch/graduate0.jpg" id="arch-l"></a>
-	</li>
-	
-	</ul>
+  <div class="element-item architecture " data-category="architecture">
+    <h3 class="name">Raster Poche</h3>
+	<p class="size">Computational Design</p>
+    <p class="type">Academic</p>
+    <p class="time">2017</p>
+    <img class="list-img" src="./project/arch/athens0.jpg"></img>
+    </div>
+  
+    <div class="element-item architecture" data-category="architecture">
+    <h3 class="name">R.O.S.E</h3>
+	<p class="size">Urban Design</p>
+    <p class="type">Competition</p>
+    <p class="time">2017</p>
+    <img class="list-img" src="./project/arch/uli0.jpg"></img>
+  </div>
+  
+    <div class="element-item architecture " data-category="architecture">
+    <h3 class="name">Atlantis</h3>
+	<p class="size">Computational Design</p>
+    <p class="type">Competition</p>
+    <p class="time">2017</p>
+    <img class="list-img" src="./project/arch/atlantis0.jpg"></img>
+  </div>
+  
+    <div class="element-item architecture " data-category="architecture">
+    <h3 class="name">Plouto</h3>
+	<p class="size">Skyscraper Design</p>
+    <p class="type">Academic</p>
+    <p class="time">2016</p>
+    <img class="list-img" src="./project/arch/ny0.jpg"></img>
+  </div>
+  
+    <div class="element-item architecture " data-category="architecture">
+    <h3 class="name">Cloud City</h3>
+	<p class="size">Residential Area Design</p>
+    <p class="type">Academic</p>
+    <p class="time">2015</p>
+    <img class="list-img" src="./project/arch/cloud0.jpg"></img>
+  </div>
+  
+    <div class="element-item architecture " data-category="architecture">
+    <h3 class="name">Arc Hotel</h3>
+	<p class="size">Hotel Design</p>
+    <p class="type">Academic</p>
+    <p class="time">2014</p>
+    <img class="list-img" src="./project/arch/hotel0.jpg"></img>
+  </div>
+  
+    <div class="element-item architecture " data-category="architecture">
+    <h3 class="name">Wind City</h3>
+	<p class="size">Computational Design</p>
+    <p class="type">Academic</p>
+    <p class="time">2015</p>
+    <img class="list-img" src="./project/arch/hotel0.jpg"></img>
+  </div>
+  
+    <div class="element-item architecture " data-category="architecture">
+    <h3 class="name">Center of Creator</h3>
+	<p class="size">Student Center Design</p>
+    <p class="type">Academic</p>
+    <p class="time">2014</p>
+    <img class="list-img" src="./project/arch/shatang0.jpg"></img>
+  </div>
+  
+    <div class="element-item architecture " data-category="architecture">
+    <h3 class="name">Death&amp;Rebirth</h3>
+	<p class="size">Landscape Design</p>
+    <p class="type">Competition</p>
+    <p class="time">2016</p>
+    <img class="list-img" src="./project/arch/liushui0.jpg"></img>
+  </div>
+  
+    <div class="element-item architecture " data-category="architecture">
+    <h3 class="name">Porsche Center</h3>
+	<p class="size">Construction Drawing</p>
+    <p class="type">Professional</p>
+    <p class="time">2016</p>
+    <img class="list-img" src="./project/arch/porsche0.jpg"></img>
+  </div>
+  
+    <div class="element-item architecture " data-category="architecture">
+    <h3 class="name">Yunhe Renjia</h3>
+	<p class="size">Construction Drawing</p>
+    <p class="type">Professional</p>
+    <p class="time">2016</p>
+    <img class="list-img" src="./project/arch/yunhe0.jpg"></img>
+  </div>
+  
+    <div class="element-item architecture " data-category="architecture">
+    <h3 class="name">Module Housing</h3>
+	<p class="size">Tectonic Design</p>
+    <p class="type">Academic</p>
+    <p class="time">2016</p>
+    <img class="list-img" src="./project/arch/graduate0.jpg"></img>
+  </div>
+  
+    <div class="element-item algorithm " data-category="architecture">
+    <h3 class="name">Simple Complexity</h3>
+	<p class="size">Fabrication</p>
+    <p class="type">Academic</p>
+    <p class="time">2015</p>
+    <img class="list-img" src="./project/code/subdivision0.jpg"></img>
+  </div>
+  
+    <div class="element-item algorithm " data-category="architecture">
+    <h3 class="name">Sacred Dimension</h3>
+	<p class="size">Fabrication</p>
+    <p class="type">Academic</p>
+    <p class="time">2017</p>
+    <img class="list-img" src="./project/code/difab0.jpg"></img>
+  </div>
+  
+    <div class="element-item algorithm " data-category="architecture">
+    <h3 class="name">Basic CA</h3>
+	<p class="size">Application</p>
+    <p class="type">Academic</p>
+    <p class="time">2016</p>
+    <img class="list-img" src="./project/code/ca0.jpg"></img>
+  </div>
+  
+    <div class="element-item algorithm " data-category="architecture">
+    <h3 class="name">Alien</h3>
+	<p class="size">Application</p>
+    <p class="type">Academic</p>
+    <p class="time">2017</p>
+    <img class="list-img" src="./project/code/redi0.jpg"></img>
+  </div>
+  
+    <div class="element-item algorithm " data-category="architecture">
+    <h3 class="name">Cloud</h3>
+	<p class="size">Application</p>
+    <p class="type">Academic</p>
+    <p class="time">2015</p>
+    <img class="list-img" src="./project/code/cloud0.jpg"></img>
+  </div>
+  
+    <div class="element-item algorithm " data-category="architecture">
+    <h3 class="name">Wave</h3>
+	<p class="size">Application</p>
+    <p class="type">Academic</p>
+    <p class="time">2015</p>
+    <img class="list-img" src="./project/code/wave0.jpg"></img>
+  </div>
+  
+    <div class="element-item algorithm " data-category="architecture">
+    <h3 class="name">Tree Eye</h3>
+	<p class="size">Application</p>
+    <p class="type">Academic</p>
+    <p class="time">2014</p>
+    <img class="list-img" src="./project/code/l-system0.jpg"></img>
+  </div>
+  
+    <div class="element-item algorithm " data-category="architecture">
+    <h3 class="name">Chimera</h3>
+	<p class="size">Application</p>
+    <p class="type">Academic</p>
+    <p class="time">2014</p>
+    <img class="list-img" src="./project/code/chimera0.jpg"></img>
+  </div>
+  
+  
+    <div class="element-item algorithm " data-category="architecture">
+    <h3 class="name">Free Mandebrot</h3>
+	<p class="size">Application</p>
+    <p class="type">Academic</p>
+    <p class="time">2017</p>
+    <img class="list-img" src="./project/code/mande0.jpg"></img>
+  </div>
+  
+    <div class="element-item algorithm " data-category="architecture">
+    <h3 class="name">Rhythm Collar</h3>
+	<p class="size">Application</p>
+    <p class="type">Academic</p>
+    <p class="time">2017</p>
+    <img class="list-img" src="./project/code/collar0.jpg"></img>
+  </div>
+  
+    <div class="element-item algorithm " data-category="architecture">
+    <h3 class="name">Sub-cross</h3>
+	<p class="size">Application</p>
+    <p class="type">Academic</p>
+    <p class="time">2017</p>
+    <img class="list-img" src="./project/code/cross0.jpg"></img>
+  </div>
 
-	</section>
-	
-	<br /><br />
-	
-	<section class="detail" id="codedetail">
-	<ul id="code-nav">
-	<br/>
-	<li class="detail-title cur" id="codeall"><a href=" " onclick="return false">Algorithm</a></li>
-	<br/>
-	<li class="detail-subtitle" id="codefa"><a href=" " onclick="return false">Fabrication</a></li><span> | </span>
-	<li class="detail-subtitle" id="codere"><a href=" " onclick="return false">Research</a></li><span> | </span>
-	<li class="detail-subtitle" id="codeap"><a href=" " onclick="return false">Application</a></li>
-	</ul>
-	
-	<ul id="code-content" class="image-grid">
-	
-	<li class="list-obj codefa" id="code-a"><a href=" " class="list-link">
-	<span class="list-des" id="code-a">Simple Comlexity<br/>Layer Stack<br />Fabrication<br />2015</span>
-	<img class="list-img" src="./project/code/subdivision0.jpg" id="code-a"></a>
-	</li>
-	<li class="list-obj codefa" id="code-b"><a href=" " class="list-link">
-	<span class="list-des" id="b">Sacred Dimension<br/>Dimension Translation<br />Fabrication<br />2017</span>
-	<img class="list-img" src="./project/code/difab0.jpg" id="code-b">
-	</a></li>
-	<li class="list-obj codeap" id="code-c"><a href=" " class="list-link">
-	<span class="list-des" id="c">Basic CA<br/>2D Cellular Automata<br />Application<br />2016</span>
-	<img class="list-img" src="./project/code/ca0.jpg" id="code-c">
-	</a></li>
-	<li class="list-obj codere" id="code-d"><a href=" " class="list-link">
-	<span class="list-des" id="d">Alien<br/>Annealing<br />Research<br />2017</span>
-	<img class="list-img" src="./project/code/redi0.jpg" id="code-d">
-	</a></li>
-	<li class="list-obj codere" id="code-e"><a href=" " class="list-link">
-	<span class="list-des" id="c">Cloud<br/>3D Cellular Automata<br />Research<br />2015</span>
-	<img class="list-img" src="./project/code/cloud0.jpg" id="code-e">
-	</a></li>
-	<li class="list-obj codere" id="code-f"><a href=" " class="list-link">
-	<span class="list-des" id="c">Wave<br/>Reaction-Diffusion<br />Research<br />2015</span>
-	<img class="list-img" src="./project/code/wave0.jpg" id="code-f">
-	</a></li>
-	<li class="list-obj codere" id="code-g"><a href=" " class="list-link">
-	<span class="list-des" id="c">Tree Eye<br/>L-system<br />Research<br />2014</span>
-	<img class="list-img" src="./project/code/l-system0.jpg" id="code-g">
-	</a></li>
-	<li class="list-obj codere" id="code-h"><a href=" " class="list-link">
-	<span class="list-des" id="c">Chimera<br/>Mix Algorithm<br />Research<br />2017</span>
-	<img class="list-img" src="./project/code/chimera0.jpg" id="code-h">
-	</a></li>
-	<li class="list-obj codere" id="code-i"><a href=" " class="list-link">
-	<span class="list-des" id="d">Free Mandebrot<br/>Mandebrot Reseach<br />Research<br />2017</span>
-	<img class="list-img" src="./project/code/mande0.jpg" id="code-i">
-	</a></li>
-	<li class="list-obj codeap" id="code-j"><a href=" " class="list-link">
-	<span class="list-des" id="c">Music Balls<br/>Data Visualization<br />Application<br />2017</span>
-	<img class="list-img" src="./project/code/ball0.jpg" id="code-j">
-	</a></li>
-	<li class="list-obj codefa" id="code-k"><a href=" " class="list-link">
-	<span class="list-des" id="c">Rhythm Collar<br/>Data Visualization<br />Application<br />2017</span>
-	<img class="list-img" src="./project/code/collar0.jpg" id="code-k">
-	</a></li>
-	<li class="list-obj codere" id="code-l"><a href=" " class="list-link">
-	<span class="list-des" id="c">Sub-cross<br/>Subdivision Algorithm<br />Research<br />2017</span>
-	<img class="list-img" src="./project/code/cross0.jpg" id="code-l">
-	</a></li>
-	
-	</ul>
-	</section>
-	
-	<br /><br />
-	
-	<section class="detail" id="mediadetail">
+    <div class="element-item media " data-category="architecture">
+    <h3 class="name">NOA Official Site</h3>
+	<p class="size">Web Design</p>
+    <p class="type">Commission</p>
+	<a href="http://noarchitecture.com/" class="list-link" target="_blank">
+    <img class="list-img" src="./project/media/noa0.jpg"></img></a>
+  </div>
+  
+    <div class="element-item media " data-category="architecture">
+    <h3 class="name">Wensi Design</h3>
+	<p class="size">Online Platform</p>
+    <p class="type">Editor in Chief</p>
+	<a href="./project/media/licedesignqr.jpg" class="list-link" target="_blank">
+    <img class="list-img" src="./project/media/licedesign0.jpg"></img></a>
+  </div>
+  
+</div>
 
-	<ul id="media-nav">
-	<br/>
-	<li class="detail-title cur" id="mediaall"><a href=" " onclick="return false">Media</a></li>
-	<br/>
-	<li class="detail-subtitle" id="mediaweb"><a href=" " onclick="return false">Web Design</a></li><span> | </span>
-	<li class="detail-subtitle" id="mediagame"><a href=" " onclick="return false">Indie Game</a></li><span> | </span>
-	<li class="detail-subtitle" id="mediaorg"><a href=" " onclick="return false">Orgnizaiton</a></li>
-	</ul>
-
-	<ul id="media-content" class="image-grid">
-	<li class="list-obj mediaweb" id="media-a"><a href="http://noarchitecture.com/" class="list-link" target="_blank">
-	<span class="list-des" id="a">NOA Official Webite<br/>Web Design<br />Commission<br />2017</span>
-	<img class="list-img" src="./project/media/noa0.jpg" id="media-a">
-	</a></li>
-	
-	<li class="list-obj mediaorg" id="media-b"><a href="./project/media/licedesignqr.jpg" class="list-link" target="_blank">
-	<span class="list-des" id="b">Wensi Design<br/>Online Platform<br />Editor in Chief<br />2016 - now</span>
-	<img class="list-img" src="./project/media/licedesign0.jpg" id="media-b">
-	</a></li>
-	</ul>
-	
-	</section>
-	
-	<br/><br/>
-	
-
-	<section class="detail" id="contact">
-
-	<ul id="contact-content" class="image-grid">
-	
-	<li class="list-obj contactgit" id="contact-a"><a href="https://github.com/cgjohnsonli" class="list-linkc" target="_blank">
-	<img class="list-img" src="./project/contact/github.png" id="contact-a">
-	</a></li>
-	
-	<li class="list-obj contactmail" id="contact-b"><a href="mailto:marchlice@outlook.com" class="list-linkc" target="_blank">
-	<img class="list-img" src="./project/contact/mail.png" id="contact-b">
-	</a></li>
-	</ul>
-	</section>
-	
-</center>
+	<script src="./isotope.pkgd.js"></script>
+	<script src="./celiiso.js"></script>
 </body>
 </html>
